@@ -1,7 +1,7 @@
 import { Context } from "grammy";
-import { InMemorySubscriberGateway } from "../adapters";
+import { MongoDBSubscriberGateway } from "../adapters";
 
-const gateway = new InMemorySubscriberGateway();
+const gateway = new MongoDBSubscriberGateway();
 
 export async function removeSubscriber(ctx: Context) {
   try {

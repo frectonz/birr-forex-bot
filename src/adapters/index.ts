@@ -1,5 +1,5 @@
 export * from "./SVGImageGenerator";
 export * from "./CurrencyDataFetcher";
-export * from "./InMemorySubscriberGateway";
+export * from "./MongoDBSubscriberGateway";
 export * from "./MessageCurrencyDataPresenter";
 export * from "./ThrowingCurrencyDataValidator";

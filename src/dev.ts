@@ -1,5 +1,9 @@
 import makeBot from "./bot";
+
 import { getBotToken } from "./helpers/envHelpers";
+import { connectToDB } from "./helpers/connectToDB";
+
+connectToDB();
 
 const bot = makeBot(getBotToken());
 

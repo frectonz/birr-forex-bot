@@ -14,6 +14,7 @@
   "dependencies": {
     "express": "^4.17.2",
     "grammy": "^1.6.2",
+    "mongoose": "^6.1.7",
     "node-fetch": "2",
     "puppeteer": "^13.1.1"
   },
