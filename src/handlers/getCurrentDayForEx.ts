@@ -1,10 +1,9 @@
-import { Context } from "grammy";
+import { Context, InputFile } from "grammy";
 
 import {
   SVGImageGenerator,
   CurrencyDataFetcher,
   ThrowingCurrencyDataValidator,
-  MessageCurrencyDataPresenter,
 } from "../adapters";
 import {
   GetCurrencyDataUseCase,
@@ -12,22 +11,29 @@ import {
   FailedToDownloadCurrencyData,
 } from "../domain";
 
+import { SELLING_IMAGE, BUYING_IMAGE } from "../helpers/svgToPng";
+
 export async function getCurrentDayForEx(ctx: Context) {
   try {
     const fetcher = new CurrencyDataFetcher();
     const imageGenerator = new SVGImageGenerator();
     const validator = new ThrowingCurrencyDataValidator();
-    const presenter = new MessageCurrencyDataPresenter(ctx);
 
     const useCase = new GetCurrencyDataUseCase(
       fetcher,
       validator,
-      imageGenerator,
-      presenter
+      imageGenerator
     );
 
     await useCase.getCurrencyData();
-    await presenter.sendMessage();
+
+    await ctx.replyWithPhoto(new InputFile(BUYING_IMAGE), {
+      caption: "Here are today's ForEx buying rates for ETB",
+    });
+
+    await ctx.replyWithPhoto(new InputFile(SELLING_IMAGE), {
+      caption: "Here are today's ForEx selling rates for ETB",
+    });
   } catch (error) {
     if (error instanceof FailedToDownloadCurrencyData) {
       console.log("Failed to download currency data");

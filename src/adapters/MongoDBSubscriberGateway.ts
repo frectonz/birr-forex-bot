@@ -1,7 +1,7 @@
+import { model, Schema } from "mongoose";
+
 import { Subscriber } from "../domain";
 import { SubscriberGateway } from "../ports";
-
-import { model, Schema } from "mongoose";
 
 const SubscriberModel = model(
   "subscriber",

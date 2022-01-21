@@ -1,5 +1,8 @@
 import puppeteer from "puppeteer";
 
+export const BUYING_IMAGE = "buying.png";
+export const SELLING_IMAGE = "selling.png";
+
 export async function convertSvgToPng(svg: string, filename: string) {
   const browser = await puppeteer.launch({
     headless: true,

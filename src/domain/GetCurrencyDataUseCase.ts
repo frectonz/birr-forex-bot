@@ -3,25 +3,25 @@ import {
   CurrencyDataProvider,
   CurrencyDataValidator,
 } from "../ports";
-import { CurrencyDataPresenter } from "../ports";
-import { convertSvgToPng } from "../helpers/svgToPng";
+import {
+  BUYING_IMAGE,
+  SELLING_IMAGE,
+  convertSvgToPng,
+} from "../helpers/svgToPng";
 
 export class GetCurrencyDataUseCase {
   private imageGenerator: ImageGenerator;
   private dataFetcher: CurrencyDataProvider;
   private dataValidator: CurrencyDataValidator;
-  private presenter: CurrencyDataPresenter;
 
   constructor(
     fetcher: CurrencyDataProvider,
     validator: CurrencyDataValidator,
-    imageGenerator: ImageGenerator,
-    presenter: CurrencyDataPresenter
+    imageGenerator: ImageGenerator
   ) {
     this.dataFetcher = fetcher;
     this.dataValidator = validator;
     this.imageGenerator = imageGenerator;
-    this.presenter = presenter;
   }
 
   async getCurrencyData() {
@@ -33,10 +33,7 @@ export class GetCurrencyDataUseCase {
     const buying_image = await this.imageGenerator.generateBuyingImage(data);
     const selling_image = await this.imageGenerator.generateSellingImage(data);
 
-    await convertSvgToPng(buying_image, "buying.png");
-    await convertSvgToPng(selling_image, "selling.png");
-
-    this.presenter.setBuyingImage("buying.png");
-    this.presenter.setSellingImage("selling.png");
+    await convertSvgToPng(buying_image, BUYING_IMAGE);
+    await convertSvgToPng(selling_image, SELLING_IMAGE);
   }
 }

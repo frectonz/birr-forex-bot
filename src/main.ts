@@ -9,13 +9,19 @@ const PORT = getPort();
 const domain = getDomain();
 const token = getBotToken();
 
-const bot = makeBot(token);
+const { bot, sendDailyForExData } = makeBot(token);
+
 const app = express();
 
-app.use(express.json());
-app.use(`/${token}`, webhookCallback(bot, "express"));
-
 connectToDB();
+
+app.use(express.json());
+
+app.get("/sendData", () => {
+  sendDailyForExData();
+});
+
+app.use(`/${token}`, webhookCallback(bot, "express"));
 
 app.listen(PORT, async () => {
   await bot.api.setWebhook(`https://${domain}/${token}`);
