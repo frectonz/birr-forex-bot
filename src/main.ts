@@ -17,8 +17,9 @@ connectToDB();
 
 app.use(express.json());
 
-app.get("/sendData", () => {
+app.get("/sendData", (_, res) => {
   sendDailyForExData();
+  res.send("OK");
 });
 
 app.use(`/${token}`, webhookCallback(bot, "express"));
