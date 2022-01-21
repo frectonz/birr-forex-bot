@@ -18,8 +18,8 @@ connectToDB();
 app.use(express.json());
 
 app.get("/sendData", (_, res) => {
-  sendDailyForExData();
   res.send("OK");
+  sendDailyForExData();
 });
 
 app.use(`/${token}`, webhookCallback(bot, "express"));
