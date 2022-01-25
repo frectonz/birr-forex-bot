@@ -15,10 +15,7 @@ import {
 
 export function makeWebhookHandle(bot: Bot, webhookSecret: string) {
   return (req: Request, res: Response) => {
-    const SECRET = req.headers["SECRET"];
-
-    console.log(req.headers);
-    console.log(webhookSecret);
+    const SECRET = req.headers.secret;
 
     if (SECRET === webhookSecret) {
       res.send("OK");
