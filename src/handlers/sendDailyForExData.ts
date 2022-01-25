@@ -26,17 +26,16 @@ export function makeDailyForExDataSender(bot: Bot) {
         validator,
         imageGenerator
       );
-
-      await useCase.getCurrencyData();
+      const image = await useCase.getCurrencyData();
 
       const subscribers = await gateway.getSubscribers();
 
       subscribers.forEach(async (sub) => {
-        await bot.api.sendPhoto(sub.id, new InputFile("buying.png"), {
+        await bot.api.sendPhoto(sub.id, new InputFile(image), {
           caption: "Here are today's ForEx buying rates for ETB",
         });
 
-        await bot.api.sendPhoto(sub.id, new InputFile("selling.png"), {
+        await bot.api.sendPhoto(sub.id, new InputFile(image), {
           caption: "Here are today's ForEx selling rates for ETB",
         });
       });

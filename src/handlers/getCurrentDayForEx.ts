@@ -11,8 +11,6 @@ import {
   FailedToDownloadCurrencyData,
 } from "../domain";
 
-import { SELLING_IMAGE, BUYING_IMAGE } from "../helpers/svgToPng";
-
 export async function getCurrentDayForEx(ctx: Context) {
   try {
     const fetcher = new CurrencyDataFetcher();
@@ -25,13 +23,13 @@ export async function getCurrentDayForEx(ctx: Context) {
       imageGenerator
     );
 
-    await useCase.getCurrencyData();
+    const image = await useCase.getCurrencyData();
 
-    await ctx.replyWithPhoto(new InputFile(BUYING_IMAGE), {
+    await ctx.replyWithPhoto(new InputFile(image), {
       caption: "Here are today's ForEx buying rates for ETB",
     });
 
-    await ctx.replyWithPhoto(new InputFile(SELLING_IMAGE), {
+    await ctx.replyWithPhoto(new InputFile(image), {
       caption: "Here are today's ForEx selling rates for ETB",
     });
   } catch (error) {

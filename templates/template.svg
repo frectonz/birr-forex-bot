@@ -1,0 +1,430 @@
+<svg width="2000" height="1500" viewBox="0 0 2000 1500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="2000" height="1500" fill="black" />
+  <rect width="1000" height="1500" fill="black" />
+  <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Fira Code" font-size="25"
+    letter-spacing="0em">
+    <tspan x="619" y="1375.35">|SwedishKroner|*</tspan>
+  </text>
+  <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Fira Code" font-size="25"
+    letter-spacing="0em">
+    <tspan x="619" y="1312.35">|Euro|*</tspan>
+  </text>
+  <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Fira Code" font-size="25"
+    letter-spacing="0em">
+    <tspan x="619" y="1249.35">|IndianRupee|*</tspan>
+  </text>
+  <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Fira Code" font-size="25"
+    letter-spacing="0em">
+    <tspan x="619" y="1186.35">|DanishKroner|*</tspan>
+  </text>
+  <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Fira Code" font-size="25"
+    letter-spacing="0em">
+    <tspan x="619" y="1123.35">|JapaneseYen|*</tspan>
+  </text>
+  <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Fira Code" font-size="25"
+    letter-spacing="0em">
+    <tspan x="619" y="1060.35">|DjiboutiFranc|*</tspan>
+  </text>
+  <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Fira Code" font-size="25"
+    letter-spacing="0em">
+    <tspan x="619" y="997.35">|ChineseYuan|*</tspan>
+  </text>
+  <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Fira Code" font-size="25"
+    letter-spacing="0em">
+    <tspan x="619" y="934.35">|USDollar|*</tspan>
+  </text>
+  <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Fira Code" font-size="25"
+    letter-spacing="0em">
+    <tspan x="619" y="871.35">|PoundSterling|*</tspan>
+  </text>
+  <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Fira Code" font-size="25"
+    letter-spacing="0em">
+    <tspan x="619" y="808.35">|SouthAfricanRand|*</tspan>
+  </text>
+  <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Fira Code" font-size="25"
+    letter-spacing="0em">
+    <tspan x="619" y="745.35">|CanadianDollar|*</tspan>
+  </text>
+  <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Fira Code" font-size="25"
+    letter-spacing="0em">
+    <tspan x="619" y="682.35">|NorwegianKroner|*</tspan>
+  </text>
+  <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Fira Code" font-size="25"
+    letter-spacing="0em">
+    <tspan x="619" y="619.35">|AustralianDollar|*</tspan>
+  </text>
+  <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Fira Code" font-size="25"
+    letter-spacing="0em">
+    <tspan x="619" y="556.35">|KenyanShilling|*</tspan>
+  </text>
+  <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Fira Code" font-size="25"
+    letter-spacing="0em">
+    <tspan x="619" y="493.35">|SaudiRiyal|*</tspan>
+  </text>
+  <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Fira Code" font-size="25"
+    letter-spacing="0em">
+    <tspan x="619" y="430.35">|KuwaitiDinar|*</tspan>
+  </text>
+  <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Fira Code" font-size="25"
+    letter-spacing="0em">
+    <tspan x="619" y="367.35">|SwissFranc|*</tspan>
+  </text>
+  <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Fira Code" font-size="25"
+    letter-spacing="0em">
+    <tspan x="619" y="304.35">|UAEDirham|*</tspan>
+  </text>
+  <path
+    d="M537.061 294.061C537.646 293.475 537.646 292.525 537.061 291.939L527.515 282.393C526.929 281.808 525.979 281.808 525.393 282.393C524.808 282.979 524.808 283.929 525.393 284.515L533.879 293L525.393 301.485C524.808 302.071 524.808 303.021 525.393 303.607C525.979 304.192 526.929 304.192 527.515 303.607L537.061 294.061ZM436 294.5H536V291.5H436V294.5Z"
+    fill="white" />
+  <path
+    d="M537.061 357.061C537.646 356.475 537.646 355.525 537.061 354.939L527.515 345.393C526.929 344.808 525.979 344.808 525.393 345.393C524.808 345.979 524.808 346.929 525.393 347.515L533.879 356L525.393 364.485C524.808 365.071 524.808 366.021 525.393 366.607C525.979 367.192 526.929 367.192 527.515 366.607L537.061 357.061ZM436 357.5H536V354.5H436V357.5Z"
+    fill="white" />
+  <path
+    d="M537.061 420.061C537.646 419.475 537.646 418.525 537.061 417.939L527.515 408.393C526.929 407.808 525.979 407.808 525.393 408.393C524.808 408.979 524.808 409.929 525.393 410.515L533.879 419L525.393 427.485C524.808 428.071 524.808 429.021 525.393 429.607C525.979 430.192 526.929 430.192 527.515 429.607L537.061 420.061ZM436 420.5H536V417.5H436V420.5Z"
+    fill="white" />
+  <path
+    d="M537.061 483.061C537.646 482.475 537.646 481.525 537.061 480.939L527.515 471.393C526.929 470.808 525.979 470.808 525.393 471.393C524.808 471.979 524.808 472.929 525.393 473.515L533.879 482L525.393 490.485C524.808 491.071 524.808 492.021 525.393 492.607C525.979 493.192 526.929 493.192 527.515 492.607L537.061 483.061ZM436 483.5H536V480.5H436V483.5Z"
+    fill="white" />
+  <path
+    d="M537.061 546.061C537.646 545.475 537.646 544.525 537.061 543.939L527.515 534.393C526.929 533.808 525.979 533.808 525.393 534.393C524.808 534.979 524.808 535.929 525.393 536.515L533.879 545L525.393 553.485C524.808 554.071 524.808 555.021 525.393 555.607C525.979 556.192 526.929 556.192 527.515 555.607L537.061 546.061ZM436 546.5H536V543.5H436V546.5Z"
+    fill="white" />
+  <path
+    d="M537.061 609.061C537.646 608.475 537.646 607.525 537.061 606.939L527.515 597.393C526.929 596.808 525.979 596.808 525.393 597.393C524.808 597.979 524.808 598.929 525.393 599.515L533.879 608L525.393 616.485C524.808 617.071 524.808 618.021 525.393 618.607C525.979 619.192 526.929 619.192 527.515 618.607L537.061 609.061ZM436 609.5H536V606.5H436V609.5Z"
+    fill="white" />
+  <path
+    d="M537.061 672.061C537.646 671.475 537.646 670.525 537.061 669.939L527.515 660.393C526.929 659.808 525.979 659.808 525.393 660.393C524.808 660.979 524.808 661.929 525.393 662.515L533.879 671L525.393 679.485C524.808 680.071 524.808 681.021 525.393 681.607C525.979 682.192 526.929 682.192 527.515 681.607L537.061 672.061ZM436 672.5H536V669.5H436V672.5Z"
+    fill="white" />
+  <path
+    d="M537.061 735.061C537.646 734.475 537.646 733.525 537.061 732.939L527.515 723.393C526.929 722.808 525.979 722.808 525.393 723.393C524.808 723.979 524.808 724.929 525.393 725.515L533.879 734L525.393 742.485C524.808 743.071 524.808 744.021 525.393 744.607C525.979 745.192 526.929 745.192 527.515 744.607L537.061 735.061ZM436 735.5H536V732.5H436V735.5Z"
+    fill="white" />
+  <path
+    d="M537.061 798.061C537.646 797.475 537.646 796.525 537.061 795.939L527.515 786.393C526.929 785.808 525.979 785.808 525.393 786.393C524.808 786.979 524.808 787.929 525.393 788.515L533.879 797L525.393 805.485C524.808 806.071 524.808 807.021 525.393 807.607C525.979 808.192 526.929 808.192 527.515 807.607L537.061 798.061ZM436 798.5H536V795.5H436V798.5Z"
+    fill="white" />
+  <path
+    d="M537.061 861.061C537.646 860.475 537.646 859.525 537.061 858.939L527.515 849.393C526.929 848.808 525.979 848.808 525.393 849.393C524.808 849.979 524.808 850.929 525.393 851.515L533.879 860L525.393 868.485C524.808 869.071 524.808 870.021 525.393 870.607C525.979 871.192 526.929 871.192 527.515 870.607L537.061 861.061ZM436 861.5H536V858.5H436V861.5Z"
+    fill="white" />
+  <path
+    d="M537.061 924.061C537.646 923.475 537.646 922.525 537.061 921.939L527.515 912.393C526.929 911.808 525.979 911.808 525.393 912.393C524.808 912.979 524.808 913.929 525.393 914.515L533.879 923L525.393 931.485C524.808 932.071 524.808 933.021 525.393 933.607C525.979 934.192 526.929 934.192 527.515 933.607L537.061 924.061ZM436 924.5H536V921.5H436V924.5Z"
+    fill="white" />
+  <path
+    d="M537.061 987.061C537.646 986.475 537.646 985.525 537.061 984.939L527.515 975.393C526.929 974.808 525.979 974.808 525.393 975.393C524.808 975.979 524.808 976.929 525.393 977.515L533.879 986L525.393 994.485C524.808 995.071 524.808 996.021 525.393 996.607C525.979 997.192 526.929 997.192 527.515 996.607L537.061 987.061ZM436 987.5H536V984.5H436V987.5Z"
+    fill="white" />
+  <path
+    d="M537.061 1050.06C537.646 1049.47 537.646 1048.53 537.061 1047.94L527.515 1038.39C526.929 1037.81 525.979 1037.81 525.393 1038.39C524.808 1038.98 524.808 1039.93 525.393 1040.51L533.879 1049L525.393 1057.49C524.808 1058.07 524.808 1059.02 525.393 1059.61C525.979 1060.19 526.929 1060.19 527.515 1059.61L537.061 1050.06ZM436 1050.5H536V1047.5H436V1050.5Z"
+    fill="white" />
+  <path
+    d="M537.061 1113.06C537.646 1112.47 537.646 1111.53 537.061 1110.94L527.515 1101.39C526.929 1100.81 525.979 1100.81 525.393 1101.39C524.808 1101.98 524.808 1102.93 525.393 1103.51L533.879 1112L525.393 1120.49C524.808 1121.07 524.808 1122.02 525.393 1122.61C525.979 1123.19 526.929 1123.19 527.515 1122.61L537.061 1113.06ZM436 1113.5H536V1110.5H436V1113.5Z"
+    fill="white" />
+  <path
+    d="M537.061 1176.06C537.646 1175.47 537.646 1174.53 537.061 1173.94L527.515 1164.39C526.929 1163.81 525.979 1163.81 525.393 1164.39C524.808 1164.98 524.808 1165.93 525.393 1166.51L533.879 1175L525.393 1183.49C524.808 1184.07 524.808 1185.02 525.393 1185.61C525.979 1186.19 526.929 1186.19 527.515 1185.61L537.061 1176.06ZM436 1176.5H536V1173.5H436V1176.5Z"
+    fill="white" />
+  <path
+    d="M537.061 1239.06C537.646 1238.47 537.646 1237.53 537.061 1236.94L527.515 1227.39C526.929 1226.81 525.979 1226.81 525.393 1227.39C524.808 1227.98 524.808 1228.93 525.393 1229.51L533.879 1238L525.393 1246.49C524.808 1247.07 524.808 1248.02 525.393 1248.61C525.979 1249.19 526.929 1249.19 527.515 1248.61L537.061 1239.06ZM436 1239.5H536V1236.5H436V1239.5Z"
+    fill="white" />
+  <path
+    d="M537.061 1302.06C537.646 1301.47 537.646 1300.53 537.061 1299.94L527.515 1290.39C526.929 1289.81 525.979 1289.81 525.393 1290.39C524.808 1290.98 524.808 1291.93 525.393 1292.51L533.879 1301L525.393 1309.49C524.808 1310.07 524.808 1311.02 525.393 1311.61C525.979 1312.19 526.929 1312.19 527.515 1311.61L537.061 1302.06ZM436 1302.5H536V1299.5H436V1302.5Z"
+    fill="white" />
+  <path
+    d="M537.061 1365.06C537.646 1364.47 537.646 1363.53 537.061 1362.94L527.515 1353.39C526.929 1352.81 525.979 1352.81 525.393 1353.39C524.808 1353.98 524.808 1354.93 525.393 1355.51L533.879 1364L525.393 1372.49C524.808 1373.07 524.808 1374.02 525.393 1374.61C525.979 1375.19 526.929 1375.19 527.515 1374.61L537.061 1365.06ZM436 1365.5H536V1362.5H436V1365.5Z"
+    fill="white" />
+  <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Fira Code" font-size="25"
+    letter-spacing="0em">
+    <tspan x="49" y="1375.35">1 Swedish Kroner &#x1f1f8;&#x1f1ea;</tspan>
+  </text>
+  <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Fira Code" font-size="25"
+    letter-spacing="0em">
+    <tspan x="49" y="1312.35">1 Euro &#x1f1ea;&#x1f1fa;</tspan>
+  </text>
+  <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Fira Code" font-size="25"
+    letter-spacing="0em">
+    <tspan x="49" y="1249.35">1 Indian Rupee &#x1f1ee;&#x1f1f3;</tspan>
+  </text>
+  <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Fira Code" font-size="25"
+    letter-spacing="0em">
+    <tspan x="49" y="1186.35">1 Danish Kroner &#x1f1e9;&#x1f1f0;</tspan>
+  </text>
+  <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Fira Code" font-size="25"
+    letter-spacing="0em">
+    <tspan x="49" y="1123.35">1 Japanese Yen &#x1f1ef;&#x1f1f5;</tspan>
+  </text>
+  <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Fira Code" font-size="25"
+    letter-spacing="0em">
+    <tspan x="49" y="1060.35">1 Djibouti Franc &#x1f1e9;&#x1f1ef;</tspan>
+  </text>
+  <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Fira Code" font-size="25"
+    letter-spacing="0em">
+    <tspan x="49" y="997.35">1 Chinese Yuan &#x1f1e8;&#x1f1f3;</tspan>
+  </text>
+  <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Fira Code" font-size="25"
+    letter-spacing="0em">
+    <tspan x="49" y="934.35">1 US Dollar &#x1f1fa;&#x1f1f8;</tspan>
+  </text>
+  <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Fira Code" font-size="25"
+    letter-spacing="0em">
+    <tspan x="49" y="871.35">1 Pound Sterling &#x1f1ec;&#x1f1e7;</tspan>
+  </text>
+  <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Fira Code" font-size="25"
+    letter-spacing="0em">
+    <tspan x="49" y="808.35">1 South Afrian Rand &#x1f1ff;&#x1f1e6;</tspan>
+  </text>
+  <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Fira Code" font-size="25"
+    letter-spacing="0em">
+    <tspan x="49" y="745.35">1 Canadian Dollar &#x1f1e8;&#x1f1e6;</tspan>
+  </text>
+  <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Fira Code" font-size="25"
+    letter-spacing="0em">
+    <tspan x="49" y="682.35">1 Norwegian Kroner &#x1f1f3;&#x1f1f4;</tspan>
+  </text>
+  <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Fira Code" font-size="25"
+    letter-spacing="0em">
+    <tspan x="49" y="619.35">1 Ausyralian Dollar &#x1f1e6;&#x1f1fa;</tspan>
+  </text>
+  <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Fira Code" font-size="25"
+    letter-spacing="0em">
+    <tspan x="49" y="556.35">1 Kenyan Shilling &#x1f1f0;&#x1f1ea;</tspan>
+  </text>
+  <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Fira Code" font-size="25"
+    letter-spacing="0em">
+    <tspan x="49" y="493.35">1 Saudi Riyal &#x1f1f8;&#x1f1e6;</tspan>
+  </text>
+  <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Fira Code" font-size="25"
+    letter-spacing="0em">
+    <tspan x="49" y="430.35">1 Kuwaiti Dinar &#x1f1f0;&#x1f1fc;</tspan>
+  </text>
+  <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Fira Code" font-size="25"
+    letter-spacing="0em">
+    <tspan x="49" y="367.35">1 Swiss Franc &#x1f1e8;&#x1f1ed;</tspan>
+  </text>
+  <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Fira Code" font-size="25"
+    letter-spacing="0em">
+    <tspan x="49" y="304.35">1 UAE Dirham &#x1f1e6;&#x1f1ea;</tspan>
+  </text>
+  <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Fira Code" font-size="32"
+    letter-spacing="0em">
+    <tspan x="143.562" y="182.688"> FOREIGN EXCHANGE </tspan>
+    <tspan x="604.062" y="182.688"> RATE FOR TODAY</tspan>
+  </text>
+  <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Fira Code" font-size="32"
+    font-weight="bold" letter-spacing="0em">
+    <tspan x="86" y="182.688">ETB</tspan>
+  </text>
+  <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Fira Code" font-size="32"
+    font-weight="bold" letter-spacing="0em">
+    <tspan x="488.938" y="182.688">BUYING</tspan>
+  </text>
+  <rect width="1000" height="1500" transform="translate(1000)" fill="black" />
+  <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Fira Code" font-size="25"
+    letter-spacing="0em">
+    <tspan x="1619" y="1375.35">|SwedishKroner|</tspan>
+  </text>
+  <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Fira Code" font-size="25"
+    letter-spacing="0em">
+    <tspan x="1619" y="1312.35">|Euro|</tspan>
+  </text>
+  <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Fira Code" font-size="25"
+    letter-spacing="0em">
+    <tspan x="1619" y="1249.35">|IndianRupee|</tspan>
+  </text>
+  <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Fira Code" font-size="25"
+    letter-spacing="0em">
+    <tspan x="1619" y="1186.35">|DanishKroner|</tspan>
+  </text>
+  <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Fira Code" font-size="25"
+    letter-spacing="0em">
+    <tspan x="1619" y="1123.35">|JapaneseYen|</tspan>
+  </text>
+  <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Fira Code" font-size="25"
+    letter-spacing="0em">
+    <tspan x="1619" y="1060.35">|DjiboutiFranc|</tspan>
+  </text>
+  <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Fira Code" font-size="25"
+    letter-spacing="0em">
+    <tspan x="1619" y="997.35">|ChineseYuan|</tspan>
+  </text>
+  <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Fira Code" font-size="25"
+    letter-spacing="0em">
+    <tspan x="1619" y="934.35">|USDollar|</tspan>
+  </text>
+  <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Fira Code" font-size="25"
+    letter-spacing="0em">
+    <tspan x="1619" y="871.35">|PoundSterling|</tspan>
+  </text>
+  <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Fira Code" font-size="25"
+    letter-spacing="0em">
+    <tspan x="1619" y="808.35">|SouthAfricanRand|</tspan>
+  </text>
+  <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Fira Code" font-size="25"
+    letter-spacing="0em">
+    <tspan x="1619" y="745.35">|CanadianDollar|</tspan>
+  </text>
+  <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Fira Code" font-size="25"
+    letter-spacing="0em">
+    <tspan x="1619" y="682.35">|NorwegianKroner|</tspan>
+  </text>
+  <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Fira Code" font-size="25"
+    letter-spacing="0em">
+    <tspan x="1619" y="619.35">|AustralianDollar|</tspan>
+  </text>
+  <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Fira Code" font-size="25"
+    letter-spacing="0em">
+    <tspan x="1619" y="556.35">|KenyanShilling|</tspan>
+  </text>
+  <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Fira Code" font-size="25"
+    letter-spacing="0em">
+    <tspan x="1619" y="493.35">|SaudiRiyal|</tspan>
+  </text>
+  <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Fira Code" font-size="25"
+    letter-spacing="0em">
+    <tspan x="1619" y="430.35">|KuwaitiDinar|</tspan>
+  </text>
+  <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Fira Code" font-size="25"
+    letter-spacing="0em">
+    <tspan x="1619" y="367.35">|SwissFranc|</tspan>
+  </text>
+  <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Fira Code" font-size="25"
+    letter-spacing="0em">
+    <tspan x="1619" y="304.35">|UAEDirham|</tspan>
+  </text>
+  <path
+    d="M1537.06 294.061C1537.65 293.475 1537.65 292.525 1537.06 291.939L1527.51 282.393C1526.93 281.808 1525.98 281.808 1525.39 282.393C1524.81 282.979 1524.81 283.929 1525.39 284.515L1533.88 293L1525.39 301.485C1524.81 302.071 1524.81 303.021 1525.39 303.607C1525.98 304.192 1526.93 304.192 1527.51 303.607L1537.06 294.061ZM1436 294.5H1536V291.5H1436V294.5Z"
+    fill="white" />
+  <path
+    d="M1537.06 357.061C1537.65 356.475 1537.65 355.525 1537.06 354.939L1527.51 345.393C1526.93 344.808 1525.98 344.808 1525.39 345.393C1524.81 345.979 1524.81 346.929 1525.39 347.515L1533.88 356L1525.39 364.485C1524.81 365.071 1524.81 366.021 1525.39 366.607C1525.98 367.192 1526.93 367.192 1527.51 366.607L1537.06 357.061ZM1436 357.5H1536V354.5H1436V357.5Z"
+    fill="white" />
+  <path
+    d="M1537.06 420.061C1537.65 419.475 1537.65 418.525 1537.06 417.939L1527.51 408.393C1526.93 407.808 1525.98 407.808 1525.39 408.393C1524.81 408.979 1524.81 409.929 1525.39 410.515L1533.88 419L1525.39 427.485C1524.81 428.071 1524.81 429.021 1525.39 429.607C1525.98 430.192 1526.93 430.192 1527.51 429.607L1537.06 420.061ZM1436 420.5H1536V417.5H1436V420.5Z"
+    fill="white" />
+  <path
+    d="M1537.06 483.061C1537.65 482.475 1537.65 481.525 1537.06 480.939L1527.51 471.393C1526.93 470.808 1525.98 470.808 1525.39 471.393C1524.81 471.979 1524.81 472.929 1525.39 473.515L1533.88 482L1525.39 490.485C1524.81 491.071 1524.81 492.021 1525.39 492.607C1525.98 493.192 1526.93 493.192 1527.51 492.607L1537.06 483.061ZM1436 483.5H1536V480.5H1436V483.5Z"
+    fill="white" />
+  <path
+    d="M1537.06 546.061C1537.65 545.475 1537.65 544.525 1537.06 543.939L1527.51 534.393C1526.93 533.808 1525.98 533.808 1525.39 534.393C1524.81 534.979 1524.81 535.929 1525.39 536.515L1533.88 545L1525.39 553.485C1524.81 554.071 1524.81 555.021 1525.39 555.607C1525.98 556.192 1526.93 556.192 1527.51 555.607L1537.06 546.061ZM1436 546.5H1536V543.5H1436V546.5Z"
+    fill="white" />
+  <path
+    d="M1537.06 609.061C1537.65 608.475 1537.65 607.525 1537.06 606.939L1527.51 597.393C1526.93 596.808 1525.98 596.808 1525.39 597.393C1524.81 597.979 1524.81 598.929 1525.39 599.515L1533.88 608L1525.39 616.485C1524.81 617.071 1524.81 618.021 1525.39 618.607C1525.98 619.192 1526.93 619.192 1527.51 618.607L1537.06 609.061ZM1436 609.5H1536V606.5H1436V609.5Z"
+    fill="white" />
+  <path
+    d="M1537.06 672.061C1537.65 671.475 1537.65 670.525 1537.06 669.939L1527.51 660.393C1526.93 659.808 1525.98 659.808 1525.39 660.393C1524.81 660.979 1524.81 661.929 1525.39 662.515L1533.88 671L1525.39 679.485C1524.81 680.071 1524.81 681.021 1525.39 681.607C1525.98 682.192 1526.93 682.192 1527.51 681.607L1537.06 672.061ZM1436 672.5H1536V669.5H1436V672.5Z"
+    fill="white" />
+  <path
+    d="M1537.06 735.061C1537.65 734.475 1537.65 733.525 1537.06 732.939L1527.51 723.393C1526.93 722.808 1525.98 722.808 1525.39 723.393C1524.81 723.979 1524.81 724.929 1525.39 725.515L1533.88 734L1525.39 742.485C1524.81 743.071 1524.81 744.021 1525.39 744.607C1525.98 745.192 1526.93 745.192 1527.51 744.607L1537.06 735.061ZM1436 735.5H1536V732.5H1436V735.5Z"
+    fill="white" />
+  <path
+    d="M1537.06 798.061C1537.65 797.475 1537.65 796.525 1537.06 795.939L1527.51 786.393C1526.93 785.808 1525.98 785.808 1525.39 786.393C1524.81 786.979 1524.81 787.929 1525.39 788.515L1533.88 797L1525.39 805.485C1524.81 806.071 1524.81 807.021 1525.39 807.607C1525.98 808.192 1526.93 808.192 1527.51 807.607L1537.06 798.061ZM1436 798.5H1536V795.5H1436V798.5Z"
+    fill="white" />
+  <path
+    d="M1537.06 861.061C1537.65 860.475 1537.65 859.525 1537.06 858.939L1527.51 849.393C1526.93 848.808 1525.98 848.808 1525.39 849.393C1524.81 849.979 1524.81 850.929 1525.39 851.515L1533.88 860L1525.39 868.485C1524.81 869.071 1524.81 870.021 1525.39 870.607C1525.98 871.192 1526.93 871.192 1527.51 870.607L1537.06 861.061ZM1436 861.5H1536V858.5H1436V861.5Z"
+    fill="white" />
+  <path
+    d="M1537.06 924.061C1537.65 923.475 1537.65 922.525 1537.06 921.939L1527.51 912.393C1526.93 911.808 1525.98 911.808 1525.39 912.393C1524.81 912.979 1524.81 913.929 1525.39 914.515L1533.88 923L1525.39 931.485C1524.81 932.071 1524.81 933.021 1525.39 933.607C1525.98 934.192 1526.93 934.192 1527.51 933.607L1537.06 924.061ZM1436 924.5H1536V921.5H1436V924.5Z"
+    fill="white" />
+  <path
+    d="M1537.06 987.061C1537.65 986.475 1537.65 985.525 1537.06 984.939L1527.51 975.393C1526.93 974.808 1525.98 974.808 1525.39 975.393C1524.81 975.979 1524.81 976.929 1525.39 977.515L1533.88 986L1525.39 994.485C1524.81 995.071 1524.81 996.021 1525.39 996.607C1525.98 997.192 1526.93 997.192 1527.51 996.607L1537.06 987.061ZM1436 987.5H1536V984.5H1436V987.5Z"
+    fill="white" />
+  <path
+    d="M1537.06 1050.06C1537.65 1049.47 1537.65 1048.53 1537.06 1047.94L1527.51 1038.39C1526.93 1037.81 1525.98 1037.81 1525.39 1038.39C1524.81 1038.98 1524.81 1039.93 1525.39 1040.51L1533.88 1049L1525.39 1057.49C1524.81 1058.07 1524.81 1059.02 1525.39 1059.61C1525.98 1060.19 1526.93 1060.19 1527.51 1059.61L1537.06 1050.06ZM1436 1050.5H1536V1047.5H1436V1050.5Z"
+    fill="white" />
+  <path
+    d="M1537.06 1113.06C1537.65 1112.47 1537.65 1111.53 1537.06 1110.94L1527.51 1101.39C1526.93 1100.81 1525.98 1100.81 1525.39 1101.39C1524.81 1101.98 1524.81 1102.93 1525.39 1103.51L1533.88 1112L1525.39 1120.49C1524.81 1121.07 1524.81 1122.02 1525.39 1122.61C1525.98 1123.19 1526.93 1123.19 1527.51 1122.61L1537.06 1113.06ZM1436 1113.5H1536V1110.5H1436V1113.5Z"
+    fill="white" />
+  <path
+    d="M1537.06 1176.06C1537.65 1175.47 1537.65 1174.53 1537.06 1173.94L1527.51 1164.39C1526.93 1163.81 1525.98 1163.81 1525.39 1164.39C1524.81 1164.98 1524.81 1165.93 1525.39 1166.51L1533.88 1175L1525.39 1183.49C1524.81 1184.07 1524.81 1185.02 1525.39 1185.61C1525.98 1186.19 1526.93 1186.19 1527.51 1185.61L1537.06 1176.06ZM1436 1176.5H1536V1173.5H1436V1176.5Z"
+    fill="white" />
+  <path
+    d="M1537.06 1239.06C1537.65 1238.47 1537.65 1237.53 1537.06 1236.94L1527.51 1227.39C1526.93 1226.81 1525.98 1226.81 1525.39 1227.39C1524.81 1227.98 1524.81 1228.93 1525.39 1229.51L1533.88 1238L1525.39 1246.49C1524.81 1247.07 1524.81 1248.02 1525.39 1248.61C1525.98 1249.19 1526.93 1249.19 1527.51 1248.61L1537.06 1239.06ZM1436 1239.5H1536V1236.5H1436V1239.5Z"
+    fill="white" />
+  <path
+    d="M1537.06 1302.06C1537.65 1301.47 1537.65 1300.53 1537.06 1299.94L1527.51 1290.39C1526.93 1289.81 1525.98 1289.81 1525.39 1290.39C1524.81 1290.98 1524.81 1291.93 1525.39 1292.51L1533.88 1301L1525.39 1309.49C1524.81 1310.07 1524.81 1311.02 1525.39 1311.61C1525.98 1312.19 1526.93 1312.19 1527.51 1311.61L1537.06 1302.06ZM1436 1302.5H1536V1299.5H1436V1302.5Z"
+    fill="white" />
+  <path
+    d="M1537.06 1365.06C1537.65 1364.47 1537.65 1363.53 1537.06 1362.94L1527.51 1353.39C1526.93 1352.81 1525.98 1352.81 1525.39 1353.39C1524.81 1353.98 1524.81 1354.93 1525.39 1355.51L1533.88 1364L1525.39 1372.49C1524.81 1373.07 1524.81 1374.02 1525.39 1374.61C1525.98 1375.19 1526.93 1375.19 1527.51 1374.61L1537.06 1365.06ZM1436 1365.5H1536V1362.5H1436V1365.5Z"
+    fill="white" />
+  <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Fira Code" font-size="25"
+    letter-spacing="0em">
+    <tspan x="1049" y="1375.35">1 Swedish Kroner &#x1f1f8;&#x1f1ea;</tspan>
+  </text>
+  <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Fira Code" font-size="25"
+    letter-spacing="0em">
+    <tspan x="1049" y="1312.35">1 Euro &#x1f1ea;&#x1f1fa;</tspan>
+  </text>
+  <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Fira Code" font-size="25"
+    letter-spacing="0em">
+    <tspan x="1049" y="1249.35">1 Indian Rupee &#x1f1ee;&#x1f1f3;</tspan>
+  </text>
+  <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Fira Code" font-size="25"
+    letter-spacing="0em">
+    <tspan x="1049" y="1186.35">1 Danish Kroner &#x1f1e9;&#x1f1f0;</tspan>
+  </text>
+  <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Fira Code" font-size="25"
+    letter-spacing="0em">
+    <tspan x="1049" y="1123.35">1 Japanese Yen &#x1f1ef;&#x1f1f5;</tspan>
+  </text>
+  <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Fira Code" font-size="25"
+    letter-spacing="0em">
+    <tspan x="1049" y="1060.35">1 Djibouti Franc &#x1f1e9;&#x1f1ef;</tspan>
+  </text>
+  <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Fira Code" font-size="25"
+    letter-spacing="0em">
+    <tspan x="1049" y="997.35">1 Chinese Yuan &#x1f1e8;&#x1f1f3;</tspan>
+  </text>
+  <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Fira Code" font-size="25"
+    letter-spacing="0em">
+    <tspan x="1049" y="934.35">1 US Dollar &#x1f1fa;&#x1f1f8;</tspan>
+  </text>
+  <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Fira Code" font-size="25"
+    letter-spacing="0em">
+    <tspan x="1049" y="871.35">1 Pound Sterling &#x1f1ec;&#x1f1e7;</tspan>
+  </text>
+  <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Fira Code" font-size="25"
+    letter-spacing="0em">
+    <tspan x="1049" y="808.35">1 South Afrian Rand &#x1f1ff;&#x1f1e6;</tspan>
+  </text>
+  <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Fira Code" font-size="25"
+    letter-spacing="0em">
+    <tspan x="1049" y="745.35">1 Canadian Dollar &#x1f1e8;&#x1f1e6;</tspan>
+  </text>
+  <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Fira Code" font-size="25"
+    letter-spacing="0em">
+    <tspan x="1049" y="682.35">1 Norwegian Kroner &#x1f1f3;&#x1f1f4;</tspan>
+  </text>
+  <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Fira Code" font-size="25"
+    letter-spacing="0em">
+    <tspan x="1049" y="619.35">1 Ausyralian Dollar &#x1f1e6;&#x1f1fa;</tspan>
+  </text>
+  <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Fira Code" font-size="25"
+    letter-spacing="0em">
+    <tspan x="1049" y="556.35">1 Kenyan Shilling &#x1f1f0;&#x1f1ea;</tspan>
+  </text>
+  <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Fira Code" font-size="25"
+    letter-spacing="0em">
+    <tspan x="1049" y="493.35">1 Saudi Riyal &#x1f1f8;&#x1f1e6;</tspan>
+  </text>
+  <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Fira Code" font-size="25"
+    letter-spacing="0em">
+    <tspan x="1049" y="430.35">1 Kuwaiti Dinar &#x1f1f0;&#x1f1fc;</tspan>
+  </text>
+  <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Fira Code" font-size="25"
+    letter-spacing="0em">
+    <tspan x="1049" y="367.35">1 Swiss Franc &#x1f1e8;&#x1f1ed;</tspan>
+  </text>
+  <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Fira Code" font-size="25"
+    letter-spacing="0em">
+    <tspan x="1049" y="304.35">1 UAE Dirham &#x1f1e6;&#x1f1ea;</tspan>
+  </text>
+  <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Fira Code" font-size="31"
+    font-weight="bold" letter-spacing="0em">
+    <tspan x="1496.35" y="183.354">SELLING</tspan>
+  </text>
+  <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Fira Code" font-size="31"
+    letter-spacing="0em">
+    <tspan x="1161.76" y="183.354"> FOREIGN EXCHANGE </tspan>
+    <tspan x="1626.46" y="183.354"> RATE FOR TODAY</tspan>
+  </text>
+  <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Fira Code" font-size="31"
+    font-weight="bold" letter-spacing="0em">
+    <tspan x="1106" y="183.354">ETB</tspan>
+  </text>
+  <path fill-rule="evenodd" clip-rule="evenodd"
+    d="M958.795 60.1929C958.795 60.2116 958.795 60.2303 958.795 60.249H958.795V74.0281H950V82.8233H958.795V89.8594H950V98.6546H958.795V108.329H970.522V98.6546H979.317V89.8594H970.522V82.8233H979.317V74.0281H970.522V60.249H970.523C970.601 49.0634 979.693 40.0201 990.898 40.0201C1002.1 40.0201 1011.19 49.0634 1011.27 60.249H1011.27V108.329H1023V60.249H1023L1023 60.1798L1023 60.1024C1023 42.3727 1008.63 28 990.898 28C973.168 28 958.795 42.3727 958.795 60.1024C958.795 60.1326 958.795 60.1628 958.795 60.1929Z"
+    fill="white" />
+</svg>

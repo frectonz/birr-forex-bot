@@ -1,9 +1,6 @@
 import puppeteer from "puppeteer";
 
-export const BUYING_IMAGE = "buying.png";
-export const SELLING_IMAGE = "selling.png";
-
-export async function convertSvgToPng(svg: string, filename: string) {
+export async function convertSvgToPng(svg: string) {
   const browser = await puppeteer.launch({
     headless: true,
     defaultViewport: null,
@@ -18,10 +15,11 @@ export async function convertSvgToPng(svg: string, filename: string) {
   await page.setContent(svg);
   await loaded;
 
-  await page.screenshot({
-    path: filename,
+  const image = await page.screenshot({
     clip: { x: 8, y: 8, width: 1000, height: 1500 },
   });
 
   await browser.close();
+
+  return image as Buffer;
 }

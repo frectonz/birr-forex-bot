@@ -3,11 +3,7 @@ import {
   CurrencyDataProvider,
   CurrencyDataValidator,
 } from "../ports";
-import {
-  BUYING_IMAGE,
-  SELLING_IMAGE,
-  convertSvgToPng,
-} from "../helpers/svgToPng";
+import { convertSvgToPng } from "../helpers/svgToPng";
 
 export class GetCurrencyDataUseCase {
   private imageGenerator: ImageGenerator;
@@ -24,16 +20,13 @@ export class GetCurrencyDataUseCase {
     this.imageGenerator = imageGenerator;
   }
 
-  async getCurrencyData() {
+  async getCurrencyData(): Promise<Buffer> {
     console.log("fetching data...");
     const fetchedData = await this.dataFetcher.getCurrencyData();
     console.log("validating data...");
     const data = await this.dataValidator.validateCurrencyData(fetchedData);
-
-    const buying_image = await this.imageGenerator.generateBuyingImage(data);
-    const selling_image = await this.imageGenerator.generateSellingImage(data);
-
-    await convertSvgToPng(buying_image, BUYING_IMAGE);
-    await convertSvgToPng(selling_image, SELLING_IMAGE);
+    console.log("generating image...");
+    const image = await this.imageGenerator.generateForExImage(data);
+    return await convertSvgToPng(image);
   }
 }
