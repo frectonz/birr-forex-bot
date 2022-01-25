@@ -3,9 +3,18 @@ import { model, Schema } from "mongoose";
 import { Subscriber } from "../domain";
 import { SubscriberGateway } from "../ports";
 
-const SubscriberModel = model(
+interface SubscriberSchema {
+  id: number;
+  is_bot: boolean;
+  first_name: string;
+  last_name: string;
+  username: string;
+  deleted: boolean;
+}
+
+const SubscriberModel = model<SubscriberSchema>(
   "subscriber",
-  new Schema(
+  new Schema<SubscriberSchema>(
     {
       id: Number,
       is_bot: Boolean,
@@ -25,15 +34,22 @@ const SubscriberModel = model(
 
 export class MongoDBSubscriberGateway implements SubscriberGateway {
   async addSubscriber(sub: Subscriber): Promise<void> {
-    const subscriber = new SubscriberModel({
-      id: sub.id,
-      is_bot: sub.is_bot,
-      first_name: sub.first_name,
-      last_name: sub.last_name,
-      username: sub.username,
-    });
+    const existing = await SubscriberModel.findOne({ id: sub.id });
 
-    await subscriber.save();
+    if (existing) {
+      existing.deleted = false;
+      await existing.save();
+    } else {
+      const subscriber = new SubscriberModel({
+        id: sub.id,
+        is_bot: sub.is_bot,
+        first_name: sub.first_name,
+        last_name: sub.last_name,
+        username: sub.username,
+      });
+
+      await subscriber.save();
+    }
   }
 
   async getSubscribers(): Promise<Subscriber[]> {
