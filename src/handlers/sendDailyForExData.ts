@@ -32,11 +32,7 @@ export function makeDailyForExDataSender(bot: Bot) {
 
       subscribers.forEach(async (sub) => {
         await bot.api.sendPhoto(sub.id, new InputFile(image), {
-          caption: "Here are today's ForEx buying rates for ETB",
-        });
-
-        await bot.api.sendPhoto(sub.id, new InputFile(image), {
-          caption: "Here are today's ForEx selling rates for ETB",
+          caption: "Here are today's ForEx rates for ETB",
         });
       });
     } catch (error) {
