@@ -26,11 +26,7 @@ export async function getCurrentDayForEx(ctx: Context) {
     const image = await useCase.getCurrencyData();
 
     await ctx.replyWithPhoto(new InputFile(image), {
-      caption: "Here are today's ForEx buying rates for ETB",
-    });
-
-    await ctx.replyWithPhoto(new InputFile(image), {
-      caption: "Here are today's ForEx selling rates for ETB",
+      caption: "Here are today's ForEx rates for ETB",
     });
   } catch (error) {
     if (error instanceof FailedToDownloadCurrencyData) {

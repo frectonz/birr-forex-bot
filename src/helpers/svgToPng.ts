@@ -16,7 +16,7 @@ export async function convertSvgToPng(svg: string) {
   await loaded;
 
   const image = await page.screenshot({
-    clip: { x: 8, y: 8, width: 1000, height: 1500 },
+    clip: { x: 8, y: 8, width: 2000, height: 1500 },
   });
 
   await browser.close();
