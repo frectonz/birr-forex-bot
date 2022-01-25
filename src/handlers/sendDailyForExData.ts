@@ -44,9 +44,13 @@ async function sendForExData(bot: Bot) {
     const subscribers = await gateway.getSubscribers();
 
     subscribers.forEach(async (sub) => {
-      await bot.api.sendPhoto(sub.id, new InputFile(image), {
-        caption: "Here are today's ForEx rates for ETB",
-      });
+      try {
+        await bot.api.sendPhoto(sub.id, new InputFile(image), {
+          caption: "Here are today's ForEx rates for ETB",
+        });
+      } catch (error) {
+        console.log("Error sending photo", error);
+      }
     });
   } catch (error) {
     if (error instanceof FailedToDownloadCurrencyData) {
