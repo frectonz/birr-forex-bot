@@ -6,8 +6,8 @@
   "scripts": {
     "build": "tsc",
     "start": "node .",
-    "dev": "tsc && node dist/dev.js",
-    "clean": "rm -rf dist selling.png buying.png"
+    "clean": "rm -rf dist",
+    "dev": "node dist/dev.js"
   },
   "author": "Fraol Lemecha",
   "license": "MIT",
