@@ -5,7 +5,6 @@ import {
   addSubscriber,
   removeSubscriber,
   getCurrentDayForEx,
-  makeDailyForExDataSender,
 } from "./handlers";
 
 export default function makeBot(token: string) {
@@ -36,7 +35,5 @@ export default function makeBot(token: string) {
   bot.command("stop", removeSubscriber);
   bot.command("help", getHelpText);
 
-  const sendDailyForExData = makeDailyForExDataSender(bot);
-
-  return { bot, sendDailyForExData };
+  return bot;
 }

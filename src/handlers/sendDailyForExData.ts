@@ -1,4 +1,5 @@
 import { Bot, InputFile } from "grammy";
+import { Request, Response } from "express";
 
 import {
   GetCurrencyDataUseCase,
@@ -11,37 +12,50 @@ import {
   MongoDBSubscriberGateway,
   ThrowingCurrencyDataValidator,
 } from "../adapters";
+import { getWebhookSecret } from "../helpers/envHelpers";
+
+export function makeWebhookHandle(bot: Bot) {
+  return (req: Request, res: Response) => {
+    const SECRET = req.headers["SECRET"];
+    const WEBHOOK_SECRET = getWebhookSecret();
+
+    if (SECRET === WEBHOOK_SECRET) {
+      res.send("OK");
+      sendForExData(bot);
+    } else {
+      res.status(401).send("UNAUTHORIZED");
+    }
+  };
+}
 
 const gateway = new MongoDBSubscriberGateway();
 
-export function makeDailyForExDataSender(bot: Bot) {
-  return async () => {
-    try {
-      const fetcher = new CurrencyDataFetcher();
-      const imageGenerator = new SVGImageGenerator();
-      const validator = new ThrowingCurrencyDataValidator();
+async function sendForExData(bot: Bot) {
+  try {
+    const fetcher = new CurrencyDataFetcher();
+    const imageGenerator = new SVGImageGenerator();
+    const validator = new ThrowingCurrencyDataValidator();
 
-      const useCase = new GetCurrencyDataUseCase(
-        fetcher,
-        validator,
-        imageGenerator
-      );
-      const image = await useCase.getCurrencyData();
+    const useCase = new GetCurrencyDataUseCase(
+      fetcher,
+      validator,
+      imageGenerator
+    );
+    const image = await useCase.getCurrencyData();
 
-      const subscribers = await gateway.getSubscribers();
+    const subscribers = await gateway.getSubscribers();
 
-      subscribers.forEach(async (sub) => {
-        await bot.api.sendPhoto(sub.id, new InputFile(image), {
-          caption: "Here are today's ForEx rates for ETB",
-        });
+    subscribers.forEach(async (sub) => {
+      await bot.api.sendPhoto(sub.id, new InputFile(image), {
+        caption: "Here are today's ForEx rates for ETB",
       });
-    } catch (error) {
-      if (error instanceof FailedToDownloadCurrencyData) {
-        console.log("Failed to download currency data");
-      } else if (error instanceof FailedToParseCurrencyData) {
-        console.log("Failed to parse currency data");
-      }
-      console.log(error);
+    });
+  } catch (error) {
+    if (error instanceof FailedToDownloadCurrencyData) {
+      console.log("Failed to download currency data");
+    } else if (error instanceof FailedToParseCurrencyData) {
+      console.log("Failed to parse currency data");
     }
-  };
+    console.log(error);
+  }
 }

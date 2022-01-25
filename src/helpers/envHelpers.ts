@@ -20,3 +20,11 @@ export function getDomain(): string {
   }
   return process.env.DOMAIN;
 }
+
+export function getWebhookSecret(): string {
+  if (!process.env.WEBHOOK_SECRET) {
+    console.log("Environment variable WEBHOOK_SECRET is not found.");
+    process.exit();
+  }
+  return process.env.WEBHOOK_SECRET;
+}

@@ -5,7 +5,7 @@ import { connectToDB } from "./helpers/connectToDB";
 
 connectToDB();
 
-const { bot } = makeBot(getBotToken());
+const bot = makeBot(getBotToken());
 
 console.log("Bot started...");
 bot.start();
