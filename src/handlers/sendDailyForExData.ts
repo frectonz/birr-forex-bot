@@ -49,7 +49,10 @@ async function sendForExData(bot: Bot) {
           caption: "Here are today's ForEx rates for ETB",
         });
       } catch (error) {
-        console.log("Error sending photo", error);
+        console.log(
+          "Error sending photo",
+          (error as { description: string })?.description
+        );
       }
     });
   } catch (error) {
