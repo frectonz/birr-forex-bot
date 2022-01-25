@@ -12,14 +12,12 @@ import {
   MongoDBSubscriberGateway,
   ThrowingCurrencyDataValidator,
 } from "../adapters";
-import { getWebhookSecret } from "../helpers/envHelpers";
 
-export function makeWebhookHandle(bot: Bot) {
+export function makeWebhookHandle(bot: Bot, webhookSecret: string) {
   return (req: Request, res: Response) => {
     const SECRET = req.headers["SECRET"];
-    const WEBHOOK_SECRET = getWebhookSecret();
 
-    if (SECRET === WEBHOOK_SECRET) {
+    if (SECRET === webhookSecret) {
       res.send("OK");
       sendForExData(bot);
     } else {
