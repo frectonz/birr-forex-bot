@@ -27,8 +27,20 @@ export function makeWebhookHandle(bot: Bot, webhookSecret: string) {
 }
 
 const gateway = new MongoDBSubscriberGateway();
+let lastSavedDay: Date | null = null;
 
 async function sendForExData(bot: Bot) {
+  const today = new Date();
+  const itsTheSameDay = lastSavedDay
+    ? lastSavedDay.toDateString() === today.toDateString()
+    : false;
+
+  if (itsTheSameDay) {
+    return;
+  } else {
+    lastSavedDay = today;
+  }
+
   try {
     const fetcher = new CurrencyDataFetcher();
     const imageGenerator = new SVGImageGenerator();

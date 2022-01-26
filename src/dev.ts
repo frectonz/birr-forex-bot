@@ -1,6 +1,6 @@
 import makeBot from "./bot";
 
-import { getBotToken } from "./helpers/envHelpers";
+import { getBotToken } from "./helpers/env";
 import { connectToDB } from "./helpers/connectToDB";
 
 connectToDB();

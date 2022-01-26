@@ -7,7 +7,7 @@ import {
   getDomain,
   getBotToken,
   getWebhookSecret,
-} from "./helpers/envHelpers";
+} from "./helpers/env";
 import { makeWebhookHandle } from "./handlers";
 import { connectToDB } from "./helpers/connectToDB";
 
