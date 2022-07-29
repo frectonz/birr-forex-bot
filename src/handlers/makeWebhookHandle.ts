@@ -61,7 +61,7 @@ async function sendForExData(bot: Bot) {
           caption: "Here are today's ForEx rates for ETB",
         });
       } catch (error) {
-        console.log(
+        console.error(
           "Error sending photo",
           (error as { description: string })?.description
         );
@@ -69,10 +69,10 @@ async function sendForExData(bot: Bot) {
     });
   } catch (error) {
     if (error instanceof FailedToDownloadCurrencyData) {
-      console.log("Failed to download currency data");
+      console.error("Failed to download currency data");
     } else if (error instanceof FailedToParseCurrencyData) {
-      console.log("Failed to parse currency data");
+      console.error("Failed to parse currency data");
     }
-    console.log(error);
+    console.error(error);
   }
 }

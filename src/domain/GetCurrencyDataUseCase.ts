@@ -21,11 +21,8 @@ export class GetCurrencyDataUseCase {
   }
 
   async getCurrencyData(): Promise<Buffer> {
-    console.log("fetching data...");
     const fetchedData = await this.dataFetcher.getCurrencyData();
-    console.log("validating data...");
     const data = await this.dataValidator.validateCurrencyData(fetchedData);
-    console.log("generating image...");
     const image = await this.imageGenerator.generateForExImage(data);
     return await convertSvgToPng(image);
   }

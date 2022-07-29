@@ -30,12 +30,12 @@ export async function getCurrentDayForEx(ctx: Context) {
     });
   } catch (error) {
     if (error instanceof FailedToDownloadCurrencyData) {
-      console.log("Failed to download currency data");
+      console.error("Failed to download currency data");
     } else if (error instanceof FailedToParseCurrencyData) {
-      console.log("Failed to parse currency data");
+      console.error("Failed to parse currency data");
     }
 
-    console.log(error);
+    console.error(error);
     ctx.reply("<b>Something went wrong.</b>\n" + "Don't worry we will fix it", {
       parse_mode: "HTML",
     });
