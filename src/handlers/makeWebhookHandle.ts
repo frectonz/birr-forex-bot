@@ -62,7 +62,8 @@ export async function sendForExData(bot: Bot) {
     subscribers.forEach(async (sub) => {
       try {
         await bot.api.sendPhoto(sub.id, new InputFile(image[sub.theme]), {
-          caption: "Here are today's ForEx rates for ETB",
+          caption:
+            "Here are today's ForEx rates for ETB\nYou can change the theme using /theme\nPowered By @birr_forex_bot",
         });
       } catch (error) {
         console.error(
