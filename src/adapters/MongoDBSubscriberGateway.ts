@@ -1,7 +1,7 @@
 import { model, Schema } from "mongoose";
 
 import { Subscriber } from "../domain";
-import { SubscriberGateway } from "../ports";
+import { SubscriberGateway, ThemeType } from "../ports";
 
 interface SubscriberSchema {
   id: number;
@@ -10,6 +10,7 @@ interface SubscriberSchema {
   last_name: string;
   username: string;
   deleted: boolean;
+  theme: ThemeType;
 }
 
 const SubscriberModel = model<SubscriberSchema>(
@@ -24,6 +25,10 @@ const SubscriberModel = model<SubscriberSchema>(
       deleted: {
         type: Boolean,
         default: false,
+      },
+      theme: {
+        type: String,
+        default: "dark",
       },
     },
     {
@@ -61,7 +66,8 @@ export class MongoDBSubscriberGateway implements SubscriberGateway {
         first_name: sub.first_name,
         last_name: sub.last_name,
         username: sub.username,
-      } as Subscriber;
+        theme: sub.theme || "dark",
+      };
     });
   }
 
@@ -71,6 +77,34 @@ export class MongoDBSubscriberGateway implements SubscriberGateway {
       {
         $set: {
           deleted: true,
+        },
+      }
+    );
+  }
+
+  async getSubscriber(id: number): Promise<Subscriber | null> {
+    const data = await SubscriberModel.findOne({ id });
+
+    if (!data) {
+      return null;
+    } else {
+      return {
+        id: data.id,
+        is_bot: data.is_bot,
+        first_name: data.first_name,
+        last_name: data.last_name,
+        username: data.username,
+        theme: data.theme || "dark",
+      };
+    }
+  }
+
+  async changeTheme(id: number, theme: ThemeType): Promise<void> {
+    await SubscriberModel.updateOne(
+      { id },
+      {
+        $set: {
+          theme,
         },
       }
     );

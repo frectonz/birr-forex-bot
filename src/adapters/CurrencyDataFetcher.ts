@@ -6,11 +6,17 @@ import { FailedToDownloadCurrencyData } from "../domain";
 const URL = "https://birru.herokuapp.com/";
 
 export class CurrencyDataFetcher implements CurrencyDataProvider {
+  private data: any;
+
   async getCurrencyData(): Promise<any> {
+    if (this.data) {
+      return this.data;
+    }
+
     try {
       const res = await fetch(URL);
-      const data = await res.json();
-      return data;
+      this.data = await res.json();
+      return this.data;
     } catch {
       throw new FailedToDownloadCurrencyData();
     }

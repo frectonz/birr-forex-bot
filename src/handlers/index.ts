@@ -1,3 +1,4 @@
+export * from "./themes";
 export * from "./getHelpText";
 export * from "./addSubscriber";
 export * from "./removeSubscriber";

@@ -12,6 +12,7 @@ export async function addSubscriber(ctx: Context) {
         first_name: ctx.from.first_name,
         last_name: ctx.from.last_name || "",
         username: ctx.from.username || "",
+        theme: "dark", // ask them to choose a theme
       });
 
       ctx.reply(
@@ -29,7 +30,7 @@ export async function addSubscriber(ctx: Context) {
       );
     }
   } catch (error) {
-    console.log(error);
+    console.error(error);
     ctx.reply(
       "<b>I think something went wrong.</b>\n" +
         "If it was an error on my side it will be fixed. Try again after some time.",

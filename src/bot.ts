@@ -1,7 +1,9 @@
 import { Bot } from "grammy";
 
 import {
+  listThemes,
   getHelpText,
+  changeTheme,
   addSubscriber,
   removeSubscriber,
   getCurrentDayForEx,
@@ -28,12 +30,17 @@ export default function makeBot(token: string) {
       command: "today",
       description: "Get today's ForEx rates",
     },
+    {
+      command: "theme",
+      description: "Change the theme of the image",
+    },
   ]);
 
   bot.command("start", addSubscriber);
   bot.command("today", getCurrentDayForEx);
   bot.command("stop", removeSubscriber);
   bot.command("help", getHelpText);
-
+  bot.command("theme", listThemes);
+  bot.on("callback_query:data", changeTheme);
   return bot;
 }

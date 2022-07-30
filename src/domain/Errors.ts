@@ -11,3 +11,10 @@ export class FailedToDownloadCurrencyData extends Error {
     this.name = "FailedToDownloadCurrencyData";
   }
 }
+
+export class ThemeNotFound extends Error {
+  constructor() {
+    super();
+    this.name = "FailedToDownloadCurrencyData";
+  }
+}

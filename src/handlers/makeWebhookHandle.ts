@@ -29,7 +29,7 @@ export function makeWebhookHandle(bot: Bot, webhookSecret: string) {
 const gateway = new MongoDBSubscriberGateway();
 let lastSavedDay: Date | null = null;
 
-async function sendForExData(bot: Bot) {
+export async function sendForExData(bot: Bot) {
   const today = new Date();
   const itsTheSameDay = lastSavedDay
     ? lastSavedDay.toDateString() === today.toDateString()
@@ -51,13 +51,17 @@ async function sendForExData(bot: Bot) {
       validator,
       imageGenerator
     );
-    const image = await useCase.getCurrencyData();
+
+    const image = {
+      light: await useCase.getCurrencyData("light"),
+      dark: await useCase.getCurrencyData("dark"),
+    };
 
     const subscribers = await gateway.getSubscribers();
 
     subscribers.forEach(async (sub) => {
       try {
-        await bot.api.sendPhoto(sub.id, new InputFile(image), {
+        await bot.api.sendPhoto(sub.id, new InputFile(image[sub.theme]), {
           caption: "Here are today's ForEx rates for ETB",
         });
       } catch (error) {

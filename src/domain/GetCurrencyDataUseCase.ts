@@ -1,4 +1,5 @@
 import {
+  ThemeType,
   ImageGenerator,
   CurrencyDataProvider,
   CurrencyDataValidator,
@@ -20,10 +21,11 @@ export class GetCurrencyDataUseCase {
     this.imageGenerator = imageGenerator;
   }
 
-  async getCurrencyData(): Promise<Buffer> {
+  async getCurrencyData(theme: ThemeType): Promise<Buffer> {
     const fetchedData = await this.dataFetcher.getCurrencyData();
     const data = await this.dataValidator.validateCurrencyData(fetchedData);
-    const image = await this.imageGenerator.generateForExImage(data);
-    return await convertSvgToPng(image);
+    const svg = await this.imageGenerator.generateForExImage(data, theme);
+    const image = await convertSvgToPng(svg);
+    return image;
   }
 }

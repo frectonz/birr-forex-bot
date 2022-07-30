@@ -10,7 +10,7 @@ export async function removeSubscriber(ctx: Context) {
 
       ctx.reply(
         "You have successfully unsubscribed.\n" +
-          "We are sorry to see you live." +
+          "We are sorry to see you go." +
           "If you want to re-subscribe start the bot by sending the command /start.",
         {
           parse_mode: "HTML",
@@ -23,7 +23,7 @@ export async function removeSubscriber(ctx: Context) {
       );
     }
   } catch (error) {
-    console.log(error);
+    console.error(error);
     ctx.reply(
       "<b>I think something went wrong.</b>\n" +
         "If it was an error on my side it will be fixed. Try again after some time.",

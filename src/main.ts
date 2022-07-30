@@ -10,7 +10,7 @@ import {
   getMongoURI,
   getWebhookSecret,
 } from "./helpers/env";
-import { makeWebhookHandle } from "./handlers";
+import { makeWebhookHandle, sendForExData } from "./handlers";
 import { connectToDB } from "./helpers/connectToDB";
 
 const token = getBotToken();
@@ -34,6 +34,11 @@ if (process.env.NODE_ENV === "production") {
     console.log(`Listening on port ${PORT}...`);
   });
 } else {
+  // set timeout to test webhook functionality
+  // setTimeout(() => {
+  //   sendForExData(bot);
+  // }, 5000);
+
   console.log("Bot started in development mode...");
   bot.start();
 }

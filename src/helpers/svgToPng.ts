@@ -1,11 +1,22 @@
-import puppeteer from "puppeteer";
+import puppeteer, { Browser } from "puppeteer";
+
+let browser: Browser | null = null;
+
+export async function getBrowser(): Promise<Browser> {
+  if (!browser) {
+    browser = await puppeteer.launch({
+      headless: true,
+      defaultViewport: null,
+      args: ["--incognito", "--no-sandbox", "--single-process", "--no-zygote"],
+    });
+    return browser;
+  }
+
+  return browser;
+}
 
 export async function convertSvgToPng(svg: string) {
-  const browser = await puppeteer.launch({
-    headless: true,
-    defaultViewport: null,
-    args: ["--incognito", "--no-sandbox", "--single-process", "--no-zygote"],
-  });
+  const browser = await getBrowser();
 
   const page = await browser.newPage();
 
@@ -19,7 +30,7 @@ export async function convertSvgToPng(svg: string) {
     clip: { x: 8, y: 8, width: 2000, height: 1500 },
   });
 
-  await browser.close();
+  page.close();
 
   return image as Buffer;
 }
