@@ -16,6 +16,13 @@ export async function getBrowser(): Promise<Browser> {
   return browser;
 }
 
+export async function closeBrowser() {
+  if (browser) {
+    await browser.close();
+    browser = null;
+  }
+}
+
 export async function convertSvgToPng(svg: string, themeInfo: ThemeInfo) {
   const browser = await getBrowser();
 
