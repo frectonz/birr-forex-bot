@@ -1,4 +1,5 @@
 import puppeteer, { Browser } from "puppeteer";
+import { ThemeInfo } from "../ports";
 
 let browser: Browser | null = null;
 
@@ -15,7 +16,7 @@ export async function getBrowser(): Promise<Browser> {
   return browser;
 }
 
-export async function convertSvgToPng(svg: string) {
+export async function convertSvgToPng(svg: string, themeInfo: ThemeInfo) {
   const browser = await getBrowser();
 
   const page = await browser.newPage();
@@ -27,7 +28,7 @@ export async function convertSvgToPng(svg: string) {
   await loaded;
 
   const image = await page.screenshot({
-    clip: { x: 8, y: 8, width: 2000, height: 1500 },
+    clip: { x: 8, y: 8, width: themeInfo.width, height: themeInfo.height },
   });
 
   page.close();

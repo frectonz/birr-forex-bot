@@ -3,6 +3,7 @@ import {
   ImageGenerator,
   CurrencyDataProvider,
   CurrencyDataValidator,
+  themes,
 } from "../ports";
 import { convertSvgToPng } from "../helpers/svgToPng";
 
@@ -25,7 +26,8 @@ export class GetCurrencyDataUseCase {
     const fetchedData = await this.dataFetcher.getCurrencyData();
     const data = await this.dataValidator.validateCurrencyData(fetchedData);
     const svg = await this.imageGenerator.generateForExImage(data, theme);
-    const image = await convertSvgToPng(svg);
+    const themeInfo = themes.get(theme)!;
+    const image = await convertSvgToPng(svg, themeInfo);
     return image;
   }
 }

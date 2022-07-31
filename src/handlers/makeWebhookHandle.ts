@@ -53,8 +53,10 @@ export async function sendForExData(bot: Bot) {
     );
 
     const image = {
-      light: await useCase.getCurrencyData("light"),
       dark: await useCase.getCurrencyData("dark"),
+      light: await useCase.getCurrencyData("light"),
+      "dark-small": await useCase.getCurrencyData("dark-small"),
+      "light-small": await useCase.getCurrencyData("light-small"),
     };
 
     const subscribers = await gateway.getSubscribers();
