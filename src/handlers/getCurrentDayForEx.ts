@@ -14,7 +14,7 @@ import {
 } from "../domain";
 
 export async function getCurrentDayForEx(ctx: Context) {
-  if (!ctx.from) {
+  if (!ctx.chat) {
     return ctx.reply(
       "I wasn't able to get the forex data.\n" +
         "If it was an error on my side it will be fixed. Try again after some time."
@@ -33,7 +33,7 @@ export async function getCurrentDayForEx(ctx: Context) {
       imageGenerator
     );
 
-    const subscriber = await gateway.getSubscriber(ctx.from.id);
+    const subscriber = await gateway.getSubscriber(ctx.chat.id);
 
     if (!subscriber) {
       return ctx.reply(

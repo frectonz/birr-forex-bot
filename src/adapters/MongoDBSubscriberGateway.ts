@@ -1,15 +1,16 @@
-import { model, Schema } from "mongoose";
+import { model, Schema, Document, Types } from "mongoose";
 
 import { Subscriber } from "../domain";
 import { SubscriberGateway, ThemeType } from "../ports";
 
 interface SubscriberSchema {
   id: number;
-  is_bot: boolean;
   first_name: string;
   last_name: string;
-  username: string;
   deleted: boolean;
+  username: string;
+  title: string;
+  type: "private" | "group" | "supergroup" | "channel";
   theme: ThemeType;
 }
 
@@ -18,10 +19,11 @@ const SubscriberModel = model<SubscriberSchema>(
   new Schema<SubscriberSchema>(
     {
       id: Number,
-      is_bot: Boolean,
       first_name: String,
       last_name: String,
       username: String,
+      title: String,
+      type: String,
       deleted: {
         type: Boolean,
         default: false,
@@ -47,11 +49,22 @@ export class MongoDBSubscriberGateway implements SubscriberGateway {
     } else {
       const subscriber = new SubscriberModel({
         id: sub.id,
-        is_bot: sub.is_bot,
-        first_name: sub.first_name,
-        last_name: sub.last_name,
-        username: sub.username,
+        type: sub.type,
+        theme: sub.theme,
       });
+
+      if (sub.type === "private") {
+        subscriber.first_name = sub.first_name;
+        subscriber.last_name = sub.last_name;
+        subscriber.username = sub.username;
+      } else if (sub.type === "group") {
+        subscriber.title = sub.title;
+      } else if (sub.type === "supergroup") {
+        subscriber.title = sub.title;
+        subscriber.username = sub.username;
+      } else if (sub.type === "channel") {
+        subscriber.title = sub.title;
+      }
 
       await subscriber.save();
     }
@@ -59,16 +72,7 @@ export class MongoDBSubscriberGateway implements SubscriberGateway {
 
   async getSubscribers(): Promise<Subscriber[]> {
     const subscribers = await SubscriberModel.find({ deleted: false });
-    return subscribers.map((sub) => {
-      return {
-        id: sub.id,
-        is_bot: sub.is_bot,
-        first_name: sub.first_name,
-        last_name: sub.last_name,
-        username: sub.username,
-        theme: sub.theme || "dark",
-      };
-    });
+    return subscribers.map(documentToObject);
   }
 
   async removeSubscriber(id: number): Promise<void> {
@@ -88,14 +92,7 @@ export class MongoDBSubscriberGateway implements SubscriberGateway {
     if (!data) {
       return null;
     } else {
-      return {
-        id: data.id,
-        is_bot: data.is_bot,
-        first_name: data.first_name,
-        last_name: data.last_name,
-        username: data.username,
-        theme: data.theme || "dark",
-      };
+      return documentToObject(data);
     }
   }
 
@@ -108,5 +105,45 @@ export class MongoDBSubscriberGateway implements SubscriberGateway {
         },
       }
     );
+  }
+}
+
+function documentToObject(
+  sub: Document<unknown, any, SubscriberSchema> &
+    SubscriberSchema & {
+      _id: Types.ObjectId;
+    }
+): Subscriber {
+  if (sub.type === "channel") {
+    return {
+      id: sub.id,
+      title: sub.title,
+      theme: sub.theme,
+      type: sub.type,
+    };
+  } else if (sub.type === "group") {
+    return {
+      id: sub.id,
+      title: sub.title,
+      theme: sub.theme,
+      type: sub.type,
+    };
+  } else if (sub.type === "supergroup") {
+    return {
+      id: sub.id,
+      title: sub.title,
+      username: sub.username,
+      theme: sub.theme,
+      type: sub.type,
+    };
+  } else {
+    return {
+      id: sub.id,
+      first_name: sub.first_name,
+      last_name: sub.last_name,
+      username: sub.username,
+      theme: sub.theme,
+      type: sub.type,
+    };
   }
 }

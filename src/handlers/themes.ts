@@ -16,7 +16,7 @@ export function listThemes(ctx: Context) {
 }
 
 export async function changeTheme(ctx: Context) {
-  if (!ctx.from) {
+  if (!ctx.chat) {
     ctx.reply(
       "I wasn't able to change the theme.\n" +
         "If it was an error on my side it will be fixed. Try again after some time."
@@ -29,14 +29,14 @@ export async function changeTheme(ctx: Context) {
       ctx.reply("Theme not found. Try Again");
     } else {
       const gateway = new MongoDBSubscriberGateway();
-      const subscriber = await gateway.getSubscriber(ctx.from.id);
+      const subscriber = await gateway.getSubscriber(ctx.chat.id);
 
       if (!subscriber) {
         ctx.reply(
           "I didn't find you in my subscribers list. Please subscribe to the bot using /start"
         );
       } else {
-        await gateway.changeTheme(ctx.from.id, themeKey);
+        await gateway.changeTheme(ctx.chat.id, themeKey);
         ctx.reply(`Theme changed to ${theme.name}`);
       }
     }

@@ -5,8 +5,8 @@ const gateway = new MongoDBSubscriberGateway();
 
 export async function removeSubscriber(ctx: Context) {
   try {
-    if (ctx.from) {
-      await gateway.removeSubscriber(ctx.from.id);
+    if (ctx.chat) {
+      await gateway.removeSubscriber(ctx.chat.id);
 
       ctx.reply(
         "You have successfully unsubscribed.\n" +

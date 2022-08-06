@@ -5,15 +5,39 @@ const gateway = new MongoDBSubscriberGateway();
 
 export async function addSubscriber(ctx: Context) {
   try {
-    if (ctx.from) {
-      await gateway.addSubscriber({
-        id: ctx.from.id,
-        is_bot: ctx.from.is_bot,
-        first_name: ctx.from.first_name,
-        last_name: ctx.from.last_name || "",
-        username: ctx.from.username || "",
-        theme: "dark", // ask them to choose a theme
-      });
+    if (ctx.chat) {
+      if (ctx.chat.type === "private") {
+        await gateway.addSubscriber({
+          id: ctx.chat.id,
+          first_name: ctx.chat.first_name,
+          last_name: ctx.chat.last_name || "",
+          username: ctx.chat.username || "",
+          theme: "dark",
+          type: "private",
+        });
+      } else if (ctx.chat.type === "group") {
+        await gateway.addSubscriber({
+          id: ctx.chat.id,
+          title: ctx.chat.title,
+          theme: "dark",
+          type: "group",
+        });
+      } else if (ctx.chat.type === "supergroup") {
+        await gateway.addSubscriber({
+          id: ctx.chat.id,
+          title: ctx.chat.title,
+          username: ctx.chat.username || "",
+          theme: "dark",
+          type: "supergroup",
+        });
+      } else if (ctx.chat.type === "channel") {
+        await gateway.addSubscriber({
+          id: ctx.chat.id,
+          title: ctx.chat.title,
+          theme: "dark",
+          type: "channel",
+        });
+      }
 
       ctx.reply(
         "You have successfully subscribed 🎉.\n" +
