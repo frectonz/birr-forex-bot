@@ -7,6 +7,7 @@ import {
   addSubscriber,
   removeSubscriber,
   getCurrentDayForEx,
+  convertCurrency,
 } from "./handlers";
 
 export default function makeBot(token: string) {
@@ -34,6 +35,10 @@ export default function makeBot(token: string) {
       command: "theme",
       description: "Change the theme of the image",
     },
+    {
+      command: "convert",
+      description: "Convert ETB input to other currencies"
+    }
   ]);
 
   bot.command("start", addSubscriber);
@@ -41,6 +46,8 @@ export default function makeBot(token: string) {
   bot.command("stop", removeSubscriber);
   bot.command("help", getHelpText);
   bot.command("theme", listThemes);
+  bot.command("convert", convertCurrency);
+
   bot.on("callback_query:data", changeTheme);
   return bot;
 }
