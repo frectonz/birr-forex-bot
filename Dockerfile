@@ -26,4 +26,4 @@ RUN pnpm run build
 
 ENV NODE_ENV production
 
-RUN pnpm run start
+CMD ["pnpm", "start"]
