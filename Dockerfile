@@ -23,4 +23,7 @@ RUN pnpm install
 COPY . .
 
 RUN pnpm run build
+
+ENV NODE_ENV production
+
 RUN pnpm run start
