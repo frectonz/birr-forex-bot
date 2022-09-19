@@ -3,7 +3,7 @@ import fetch from "node-fetch";
 import { CurrencyDataProvider } from "../ports";
 import { FailedToDownloadCurrencyData } from "../domain";
 
-const URL = "https://birru.herokuapp.com/";
+const URL = "https://birru.up.railway.app/";
 
 export class CurrencyDataFetcher implements CurrencyDataProvider {
   private data: any;
