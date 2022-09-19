@@ -6,6 +6,7 @@ let browser: Browser | null = null;
 export async function getBrowser(): Promise<Browser> {
   if (!browser) {
     browser = await puppeteer.launch({
+      executablePath: process.env.NODE_ENV === "production" ? "/usr/bin/google-chrome" : undefined,
       headless: true,
       defaultViewport: null,
       args: ["--incognito", "--no-sandbox", "--single-process", "--no-zygote"],
